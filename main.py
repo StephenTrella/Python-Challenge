@@ -13,11 +13,14 @@ Month = []
 Revenue = []
 Date = []
 
+
 #Define Variables
 Month_count = 0
 Total_revenue= 0
 Total_change_revenvue= 0
 Initial_revenue = 0 
+prev_revenue = 0
+
 
 
 #Open the CSV
@@ -34,7 +37,19 @@ with open(csvpath) as csvfile:
         Month_count += 1
 
         #Totaling Revenue
-        Total_revenue = Total_revenue + int(row["Revenue"])
+        Total_revenue += int(row[1])
+
+        #Track the revenue change
+        Total_change_revenvue= int(row[1])-prev_revenue
+        prev_revenue=int(row[1])
+        
+
+
+
+
+        
+
+
 
 
 

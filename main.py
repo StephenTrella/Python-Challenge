@@ -1,4 +1,3 @@
-#Python HW
 
 #Import file paths across operating systems/ Module for reading CSV files
 
@@ -83,25 +82,6 @@ print(output)
 with open(outputfile, "w") as txt_file:
     txt_file.write(output)
 
-
-
-
-
-
-        
-
-
-
-
-        
-
-
-
-
-
-
-#print the outcomes
-        
 
 
 
